@@ -1,0 +1,636 @@
+@charset "UTF-8";
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*-----------------------로그인-----------------------*/
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 30% auto 0 auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/*-----------------------회원가입-----------------------*/
+.container .card {
+    margin-top: 45%;
+}
+
+/*-----------------------header-----------------------*/
+.container {
+    position: relative;
+}
+
+.section_1 {
+    position: relative;
+}
+
+.section_1 .header {
+    /*-----------------------상단 링크-----------------------*/
+    /*-----------------------검색바-----------------------*/
+    /*-----------------------gnb-----------------------*/
+}
+
+.section_1 .header .navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.section_1 .header .link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.section_1 .header .link ul > li {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.section_1 .header .link ul > li a {
+    letter-spacing: -1px;
+}
+
+.section_1 .header .link ul > li .log-in {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #5f6c9c;
+    z-index: 2;
+}
+
+.section_1 .header .link ul > li .log-in ul {
+    overflow: hidden;
+}
+
+.section_1 .header .link ul > li .log-in ul li {
+    float: inherit;
+    line-height: 30px;
+}
+
+.section_1 .header .search {
+    padding-top: 30px;
+}
+
+.section_1 .header .search form {
+    overflow: hidden;
+}
+
+.section_1 .header .search form a {
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+
+.section_1 .header .search form div {
+    position: relative;
+    height: 40px;
+    /*
+        돋보기 버튼 위치값 설정
+    */
+}
+
+.section_1 .header .search form div input {
+    height: 40px;
+    padding: 0;
+    border: 2px solid #5f6c9c;
+    background: #fafafa;
+    border-radius: 0;
+}
+
+.section_1 .header .search form div button.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    color: #fff;
+    background: #5f6c9c;
+    border-radius: 0;
+    border: none;
+    padding: 0 12px;
+    font-size: 25px;
+}
+
+.section_1 .header .navbar input[type="search"] {
+    border: 3px solid #5f6c9c;
+    height: 45px;
+}
+
+.section_1 .header .navbar button[type="submit"] {
+    border: 1px solid #5f6c9c;
+    color: #5f6c9c;
+}
+
+.section_1 .header .navbar button[type="submit"]:hover {
+    background: #5f6c9c;
+    color: #fff;
+}
+
+.section_1 .header nav.navbar {
+    background: #5f6c9c;
+}
+
+.section_1 .header nav.navbar ul .nav-item > a {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.section_1 .header nav.navbar ul .nav-item > a:hover {
+    color: #fff;
+}
+
+.section_1 .header nav.navbar .dropdown-menu a:hover {
+    color: #5f6c9c;
+}
+
+/*-----------------------body-----------------------*/
+.section_2 .body {
+    /*-----------------------depth1,depth2,depth3----------------*/
+    /*-----------------------책 리스트 전체 div-----------------------*/
+    /*-----------------------detail - 상품상세-----------------------*/
+    /*-----------------------cart-wrap - 장바구니 내역-------------------*/
+    /*--------------------pagination---------------------*/
+}
+
+.section_2 .body .breadcrumb {
+    background: #fff;
+    /*-----------------------처음 보여지는 리스트-----------------------*/
+}
+
+.section_2 .body .breadcrumb > li {
+    position: relative;
+    padding-right: 10px;
+    line-height: 30px;
+    /*-----------------리스 다음에 나오는 > 표시함----------------------*/
+}
+
+.section_2 .body .breadcrumb > li + li:before {
+    content: '';
+    position: absolute;
+    padding: 0 3px;
+    top: 15px;
+    left: -13px;
+    border-top: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.section_2 .body .breadcrumb > li + li:after {
+    content: '';
+    position: absolute;
+    top: 16.5px;
+    left: -10px;
+    height: 6px;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.section_2 .body .breadcrumb > li .btn-group button {
+    width: auto;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 0 transparent;
+}
+
+.section_2 .body .breadcrumb > li .btn-group button .caret {
+    float: right;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.section_2 .body .breadcrumb > li .btn-group .dropdown-menu {
+    border: 1px solid #5f6c9c;
+    border-radius: 0;
+    padding-left: 15px;
+}
+
+.section_2 .body .book-list-wrap ul {
+    overflow: hidden;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail {
+    overflow: hidden;
+    position: relative;
+    /*----------------------- 책의 대한 설명 - caption-----------------------*/
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail img {
+    vertical-align: middle;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption {
+    float: right;
+    margin: 0 -15px;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption h1 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption h1 a {
+    display: block;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption .info-wrap {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption .info-wrap .info {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    /*-------------------- 정보의 | 를 시하기 위해 설정--------------------*/
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption .info-wrap .info_1:after, .section_2 .body .book-list-wrap ul li .thumbnail .caption .info-wrap .info_2:after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    content: '|';
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption .detail {
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .caption .price {
+    float: left;
+    margin-top: 15px;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .btn-group {
+    float: left;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .btn-group .btn {
+    display: block;
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.section_2 .body .book-list-wrap ul li .thumbnail .btn-group .btn:before {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+}
+
+.section_2 .body .detail {
+    /*-----------------------상품상세 리스트-----------------------*/
+}
+
+.section_2 .body .detail .thumbnail {
+    overflow: hidden;
+}
+
+.section_2 .body .detail .thumbnail .cont {
+    /*------------------상품상세 내용 1(상단)------------------*/
+    /*----------------상품상세 내용 2(상품상세 중간)--------------*/
+    /*---------------상품상세 내용 3(상품 상세 하단 버튼들)----------*/
+}
+
+.section_2 .body .detail .thumbnail .cont_1 {
+    /*---------------저자, 출판사 , 출판일자----------------*/
+}
+
+.section_2 .body .detail .thumbnail .cont_1 h3 {
+    line-height: 50px;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 h3 span {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 .info-wrap {
+    margin-bottom: 1rem;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 .info-wrap span {
+    position: relative;
+    margin-right: 12.5px;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 .info-wrap span + span:after {
+    position: absolute;
+    content: '|';
+    top: 0;
+    left: -10px;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 .ranking {
+    margin: 1rem 0;
+}
+
+.section_2 .body .detail .thumbnail .cont_1 .ranking em {
+    color: #fa4654;
+}
+
+.section_2 .body .detail .thumbnail .cont_3 {
+    margin-top: 1rem;
+}
+
+.section_2 .body .detail .thumbnail .cont_3 .btn-group {
+    margin-top: 2.5rem;
+}
+
+.section_2 .body .detail .thumbnail .cont_3 .btn-group button {
+    border-radius: 0;
+    margin-right: 5px;
+    text-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    background-img: transparent;
+}
+
+.section_2 .body .detail .thumbnail .cont_3 .btn-group button:last-child {
+    margin-right: 0;
+}
+
+.section_2 .body .cart-wrap h3 {
+    padding-left: 1.5rem;
+    color: #000;
+    line-height: 50px;
+    border-bottom: 2px solid #ddd;
+}
+
+.section_2 .body .cart-wrap table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.section_2 .body .cart-wrap table > tbody > tr > td.checkbox {
+    border: none;
+}
+
+.section_2 .body .cart-wrap table > tbody > tr > td.checkbox input {
+    margin: 0 auto;
+}
+
+.section_2 .body .cart-wrap .tbody .title {
+    overflow: hidden;
+}
+
+.section_2 .body .cart-wrap .tbody .btn-wrap button {
+    float: right;
+    margin: 0.75rem;
+}
+
+.section_2 .body .cart-wrap .tbody .nomargin {
+    margin: 1rem 0;
+    float: left;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    width: 100%;
+}
+
+.section_2 .body .cart-wrap .tbody .cont_3 button {
+    float: right;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+}
+
+.section_2 .body .pagination {
+    width: 400px;
+    overflow: hidden;
+    display: block;
+    margin: 20px auto;
+}
+
+.section_2 .body .pagination li a {
+    border: none;
+}
+
+.section_2 .body .mymenu-wrap {
+    overflow: hidden;
+}
+
+.section_2 .body .mymenu-wrap ul {
+    overflow: hidden;
+}
+
+.section_2 .body .mymenu-wrap ul li {
+    float: left;
+    margin: 20px 0;
+}
+
+.section_2 .body .mymenu-wrap ul li a {
+    border: 1px solid rgba(89, 108, 156, 0.25);
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 10rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #3e3f89;
+    background: rgba(89, 108, 156, 0.25);
+    text-align: center;
+    font-weight: bold;
+}
+
+.section_2 .body .mymenu-wrap ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 10rem;
+    background: #5f6c9c;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fff;
+    z-index: -1;
+}
+
+.section_2 .body .mymenu-wrap ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section_2 .body .mymenu-wrap ul li a:hover:before {
+    width: 100%;
+    height: 10rem;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.section_2 .body .mymenu-wrap ul li a:active {
+    background: #5f6c9c;
+    color: #fff;
+}
+
+.section_2 .body .history-wrap .table-wrap table th, .section_2 .body .history-wrap .table-wrap table td {
+    vertical-align: middle;
+}
+
+.section_2 .body .history-wrap .table-wrap table .title h4 {
+    margin: 2rem 0;
+}
+
+.section_2 .body .history-wrap .table-wrap table .tbody tr:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+.section_2 .body .history-wrap .table-wrap table .tbody tr td a {
+    color: #727272;
+}
+
+.section_2 .body .history-wrap .table-wrap table .tbody tr td.product {
+    padding-left: 7rem;
+}
+
+.section_2 .body .history-wrap .select-wrap {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section_2 .body .history-wrap .select-wrap * {
+    float: right;
+    margin: 0 1rem;
+}
+
+/*-----------------------count-----------------------*/
+.qty .counter {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #3661e3;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    text-indent: 0;
+    text-align: center;
+    border: 0;
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty input:disabled {
+    background-color: white;
+}
+
+@media (max-width: 992px) {
+    .section_1 {
+        position: relative;
+    }
+
+    .section_1:after {
+        display: none;
+    }
+
+    .section_2 .cart-wrap .names .pro-info {
+        width: 50% !important;
+    }
+
+    .section_2 .cart-wrap .names .amount {
+        width: 40% !important;
+    }
+
+    .section_2 .cart-wrap .names .check-wrap {
+        width: 10% !important;
+    }
+
+    .section_2 .history-wrap .table-wrap .names .pro-info {
+        width: 35% !important;
+    }
+
+    .section_2 .history-wrap .table-wrap .names .price {
+        width: 35% !important;
+    }
+
+    .section_2 .history-wrap .table-wrap .names .amount {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .section_1 .link > ul li {
+        padding: 0;
+    }
+
+    .section_1 .header .link ul > li .log-in ul li a {
+        font-size: 10px;
+    }
+
+    .section_2 .body .cart-wrap .tbody .nomargin {
+        width: 15rem !important;
+    }
+}
