@@ -13,7 +13,7 @@
                             <c:choose>
                                 <c:when test="${empty sessionScope.loginInfo}">
                                     <li class="col-3">
-                                        <a href="<%=application.getContextPath()%>/loginform.login">로그인</a>
+                                        <a href="${pageContext.request.contextPath}/login">로그인</a>
                                     </li>
                                     <li class="col-3">
                                         <a href="<%=application.getContextPath()%>/joinform.member">회원가입</a>
@@ -33,7 +33,7 @@
                                     <li class="col-3"><a href="<%=application.getContextPath()%>/logoutAction.login">로그아웃</a></li>
                                 </c:otherwise>
                             </c:choose>
-                            <li class="col-3"><a href="<%=application.getContextPath()%>/boardlist.board">게시판</a> </li>
+                            <li class="col-3"><a href="<%=application.getContextPath()%>/boardlist.board">게시판</a></li>
                             <li class="col-3"><a href="<%=application.getContextPath()%>/booklist.book">상품 목록</a></li>
                         </ul>
                     </div>
@@ -45,19 +45,22 @@
             <div class="container search">
                 <div class="row">
                     <div class="navbar col-12">
-                        <a class="navbar-brand col-md-3 col-xs-12" href="#">
-                            <img src="http://image.kyobobook.co.kr/ink/images/gnb/logo_kyobo.png" class="mx-auto d-block"/>
+                        <a class="navbar-brand col-md-3 col-12" href="#">
+                            <img src="resources/image/junkilogo.png" class="mx-auto d-block"/>
                         </a>
-                        <form class="form-inline mx-auto col-md-8 col-xs-12" role="search">
-                            <input class="form-control mr-sm-2 col-10 rounded-0" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success ml-2" type="submit"> <i class="fa fa-search"></i> </button>
+                        <form class="form-inline mx-auto col-md-8 col-12" role="search">
+                            <input class="form-control mr-sm-2 col-9 rounded-0" type="search" placeholder="Search"
+                                   aria-label="Search">
+                            <button class="btn btn-outline-success ml-2" type="submit"><i class="fa fa-search"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
             <!--    gnb     -->
             <nav class="navbar navbar-expand-lg navbar-dark mt-3 mb-3">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -74,7 +77,8 @@
                         </li>
 
                         <li class="nav-item mx-2 dropdown">
-                            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu rounded-0" aria-labelledby="dropdown01">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
