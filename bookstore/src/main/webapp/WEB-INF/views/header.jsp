@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-
 <section class="section section_1">
     <article class="header">
         <header>
@@ -13,24 +12,24 @@
                             <c:choose>
                                 <c:when test="${empty sessionScope.loginInfo}">
                                     <li class="col-3">
-                                        <a href="${pageContext.request.contextPath}/login">로그인</a>
+                                        <a href="<%=application.getContextPath()%>/user/login">로그인</a>
                                     </li>
                                     <li class="col-3">
-                                        <a href="<%=application.getContextPath()%>/joinform.member">회원가입</a>
+                                        <a href="<%=application.getContextPath()%>/user/join">회원가입</a>
                                     </li>
                                 </c:when>
                                 <c:otherwise>
-                                    <li class="col-3">
-                                        <a href="<%=application.getContextPath()%>/mymenu.jsp">${sessionScope.loginInfo}님<i class="fa fa-caret-down"></i></a>
+                                    <li class="col-3 login-after">
+                                        <a href="<%=application.getContextPath()%>/user/mymenu">${sessionScope.loginInfo.id}님<i class="fa fa-caret-down"></i></a>
                                         <div class="log-in col-12 py-2">
                                             <ul class="sub-menu">
-                                                <li><a href="<%=application.getContextPath()%>/myinfo_form.member"> 나의 정보보기</a></li>
+                                                <li><a href="<%=application.getContextPath()%>/mymenu"> 나의 정보보기</a></li>
                                                 <li><a href="<%=application.getContextPath()%>/cartview.cart"> 장바구니</a> </li>
                                                 <li><a href="<%=application.getContextPath()%>/orderview.order"> 주문내역</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="col-3"><a href="<%=application.getContextPath()%>/logoutAction.login">로그아웃</a></li>
+                                    <li class="col-3"><a href="<%=application.getContextPath()%>/user/logout">로그아웃</a></li>
                                 </c:otherwise>
                             </c:choose>
                             <li class="col-3"><a href="<%=application.getContextPath()%>/boardlist.board">게시판</a></li>
@@ -39,17 +38,16 @@
                     </div>
                 </div>
             </div>
-            <!--//  상단 링크들  -->
 
-            <!--    검색  -->
+            <!-- 검색 -->
             <div class="container search">
                 <div class="row">
                     <div class="navbar col-12">
                         <a class="navbar-brand col-md-3 col-12" href="#">
-                            <img src="resources/image/junkilogo.png" class="mx-auto d-block"/>
+                            <img src="${pageContext.request.contextPath}/resources/image/junkilogo.png" class="mx-auto d-block"/>
                         </a>
                         <form class="form-inline mx-auto col-md-8 col-12" role="search">
-                            <input class="form-control mr-sm-2 col-9 rounded-0" type="search" placeholder="Search"
+                            <input class="form-control mr-2 col-9 rounded-0" type="search" placeholder="Search"
                                    aria-label="Search">
                             <button class="btn btn-outline-success ml-2" type="submit"><i class="fa fa-search"></i>
                             </button>
@@ -57,7 +55,8 @@
                     </div>
                 </div>
             </div>
-            <!--    gnb     -->
+            
+            <!-- gnb 구분 -->
             <nav class="navbar navbar-expand-lg navbar-dark mt-3 mb-3">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                         aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">

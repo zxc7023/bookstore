@@ -1,4 +1,4 @@
-package com.junkikim.vo;
+package com.bookstore.vo;
 
 public class UserVO {
 
@@ -7,23 +7,24 @@ public class UserVO {
 	String name;
 	int postcode;
 	String address;
-	String detailAddress;
+	String detail_address;
 	String phone;
-	int member_type;
+	int type;
 
 	public UserVO() {
 	}
 
-	public UserVO(String id, String password, String name, int postcode, String address, String detailAddress,
-			String phone, int member_type) {
+	public UserVO(String id, String password, String name, int postcode, String address, String detail_address,
+			String phone, int type) {
+		super();
 		this.id = id;
 		this.password = password;
 		this.name = name;
 		this.postcode = postcode;
 		this.address = address;
-		this.detailAddress = detailAddress;
+		this.detail_address = detail_address;
 		this.phone = phone;
-		this.member_type = member_type;
+		this.type = type;
 	}
 
 	public String getId() {
@@ -66,12 +67,12 @@ public class UserVO {
 		this.address = address;
 	}
 
-	public String getDetailAddress() {
-		return detailAddress;
+	public String getDetail_address() {
+		return detail_address;
 	}
 
-	public void setDetailAddress(String detailAddress) {
-		this.detailAddress = detailAddress;
+	public void setDetail_address(String detail_address) {
+		this.detail_address = detail_address;
 	}
 
 	public String getPhone() {
@@ -82,19 +83,19 @@ public class UserVO {
 		this.phone = phone;
 	}
 
-	public int getMember_type() {
-		return member_type;
+	public int getType() {
+		return type;
 	}
 
-	public void setMember_type(int member_type) {
-		this.member_type = member_type;
+	public void setType(int type) {
+		this.type = type;
 	}
 
 	@Override
 	public String toString() {
 		return "UserVO [id=" + id + ", password=" + password + ", name=" + name + ", postcode=" + postcode
-				+ ", address=" + address + ", detailAddress=" + detailAddress + ", phone=" + phone + ", member_type="
-				+ member_type + "]";
+				+ ", address=" + address + ", detail_address=" + detail_address + ", phone=" + phone + ", type=" + type
+				+ "]";
 	}
 
 }

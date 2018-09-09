@@ -5,15 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="resources/js/jquery-3.2.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-<script type="text/javascript"> 
+<script> 
 var message = '${msg}'; 
 var returnUrl = '${url}'; 
 alert(message); 
-document.location.href = returnUrl; 
+document.location.href = returnUrl;
 </script>
 </body>
 </html>
